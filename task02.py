@@ -24,5 +24,9 @@ print("MIN temp on next 5 days will be", min_temp)
 
 for forecasts in location.forecast():
 	if min_temp == forecasts['low']:
+		
 		print("And it falls on",forecasts['day'])
+for forecasts in location.forecast():
+	if forecasts['text'] == "Showers":
+		print("It will rain on", forecasts['day'])
 

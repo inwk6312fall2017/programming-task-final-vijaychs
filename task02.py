@@ -11,6 +11,7 @@ condition = location.condition()
 #    print (forecasts['high'])
 #    print (forecasts['low'])
 
+
 max_temp = max(forecasts['high'] for forecasts in location.forecast())
 print("MAX temp on next 5 days will be", max_temp)
 
